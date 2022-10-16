@@ -1,0 +1,148 @@
+*{
+  box-sizing: border-box;
+}
+body {background-color: antiquewhite; }
+
+#HeadText h1 {
+  background-image: url("https://images.unsplash.com/photo-1621265040752-58815f16ca6b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80.jpg");
+  font-family: 'Playball';
+  font-size: 500%;
+  color: white;
+  text-shadow; 0px 8px 8px #000000;
+  text-align: center;
+  margin-top: auto;
+  background-size: cover;
+  height: 30vh;
+  width: 100%;
+  background-position: center center;
+  margin-bottom: 0vh;
+}
+#HeadText h1.tp{
+  font-size: 250%
+}
+
+#HeadText h1.black {
+  color: black;
+  text-shadow; 0px 8px 8px #FFFFFF;
+}
+
+h4 {
+  margin-bottom: 0;
+  margin-top: 0;
+   font-family: 'Playball';
+  font-size: 30px;
+  color: saddlebrown;
+}
+
+ul, ol {
+  margin-top: 0;
+}
+
+
+
+#ingredients {
+  font-size: 20px; 
+  color: saddlebrown;
+}
+
+#equipment {
+  color: saddlebrown;
+}
+
+#directions {
+  color: saddlebrown;
+}
+
+
+
+ul.b {list-style-type: circle;}
+ol.c {list-style-type: upper-roman;}
+
+
+.Recipe-Col {
+  margin-top: 2vh;
+  padding-bottom; 4vh;
+  justify-content: space-between;
+  display: flex;
+  border-collapse: separate;
+  border-spacing: 0px;
+}
+
+/* hide colums at first */
+.Recipe-Col #ingredients ul,
+.Recipe-Col #equipment  ul,
+.Recipe-Col #directions  ol
+{ display: none; }
+
+.Recipe-Col #ingredients.tpShow ul,
+.Recipe-Col #equipment.tpShow ul,
+.Recipe-Col #directions.tpShow ol{ 
+display: block; }
+
+@media screen and (orientation: portrait) { 
+  #HeadText {
+    height: 30vh;
+  }
+  #HeadText h1 {
+    font-size: 300%;
+  }
+  h4{
+    font-size: 20px;
+  }
+  .Recipe-Col {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+    .Recipe-Col div {
+    float: none;
+    display: block;
+  }
+  .Recipe-Col div#ingredients {
+    width: 100%;
+  }
+  .Recipe-Col div#equipment {
+    width: 100%;
+  }
+  .Recipe-Col div#directions {
+    width: 100%;
+  }
+  
+}
+  
+
+@media screen and (orientation: landscape) {
+    #HeadText {
+    height: 30vh;
+  }
+  #HeadText h1 {
+    font-size: 700%;
+  }
+    h4{
+    font-size: 50px;
+  }
+  
+    .Recipe-Col div {
+    float: none;
+    display: block;
+  }
+  .Recipe-Col div#ingredients {
+    width: 100%;
+  }
+  .Recipe-Col div#equipment {
+    width: 100%;
+  }
+  .Recipe-Col div#directions {
+    width: 100%;
+  }
+  li {
+    font-size: 30px;
+  }
+}
+
+#Footer {
+  font-size: 9px;
+  text-align: left;
+  font-family: Arial ;
+}
