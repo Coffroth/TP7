@@ -28,35 +28,7 @@ function loadFileInto(fromFile, whereTo) {
 
 window.onload = function() {
   
-    loadFileInto("ingredients.html", "#ingredients ul");
-   loadFileInto("equipment.html", "#equipment ul");
-   loadFileInto("directions.html", "#directions ol");
-  
-  document.querySelector("#HeadText h1").classList.add("tp");
-  
-  document.querySelector("#HeadText h1").onclick = function() {
     
-    this.classList.toggle("black");
-  }
-  
-  document.querySelector(".Recipe-Col #ingredients").onclick = function() {
-    
-    this.classList.toggle("tpShow");
-  }
-  
-    document.querySelector(".Recipe-Col #equipment").onclick = function() {
-    
-    this.classList.toggle("tpShow");
-  }
-    
-      document.querySelector(".Recipe-Col #directions").onclick = function() {
-    
-    this.classList.toggle("tpShow");
-  }
-      
-      setTimeout(function() {
-        document.querySelector(".Recipe-Col #ingredients ul").innerHTML += "<li> A hunger for BREAD</li>"
-      }, 100);
      
  
 
