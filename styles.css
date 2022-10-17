@@ -115,20 +115,6 @@ ol.c {
   border-spacing: 0px;
 }
 
-/* hide colums at first */
-
-.Recipe-Col #ingredients ul,
-.Recipe-Col #equipment ul,
-.Recipe-Col #directions ol {
-  display: none;
-}
-
-.Recipe-Col #ingredients.tpShow ul,
-.Recipe-Col #equipment.tpShow ul,
-.Recipe-Col #directions.tpShow ol {
-  display: block;
-}
-
 @media screen and (orientation: portrait) {
   #HeadText {
     height: 30vh;
